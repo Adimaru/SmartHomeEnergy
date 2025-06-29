@@ -1,0 +1,59 @@
+# Visual Studio and .NET project files
+**/.vs/
+**/bin/
+**/obj/
+**/publish/
+**/app_package.zip # For local deployment zips
+
+# Node.js and React Frontend specific ignores
+/frontend-app/node_modules/
+/frontend-app/build/
+/frontend-app/.env.local
+/frontend-app/npm-debug.log*
+/frontend-app/yarn-debug.log*
+/frontend-app/yarn-error.log*
+/frontend-app/.idea/ # If using WebStorm or similar JetBrains IDE
+
+# Logs
+*.log
+log/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+*.suo
+*.user
+*.atsln
+*.dbmdl
+*.jfm
+*.jfs
+*.jfd
+*.jfm
+*.tlog
+*.trx
+*.vspscc
+*.vssscc
+*.bak
+*.pyc
+*.swp
+*.swo
+*~
+*.tmp
+*.iml # IntelliJ IDEA files
+
+# Package files
+*.nupkg
+*.snupkg
+
+# Test Results
+TestResults/
+.trx
+
+# Azure Specific
+.azure/
+*.publishsettings
+
+# Render specific
+.render/
