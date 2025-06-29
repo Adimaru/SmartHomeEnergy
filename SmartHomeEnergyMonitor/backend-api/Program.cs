@@ -72,8 +72,7 @@ app.MapPost("/api/energy", async (EnergyData data, IHubContext<EnergyHub> hubCon
 
     return Results.Ok();
 })
-.WithName("PostEnergyData")
-.WithOpenApi();
+.WithName("PostEnergyData");
 
 app.MapGet("/api/history", () =>
 {
@@ -82,8 +81,7 @@ app.MapGet("/api/history", () =>
         return Results.Ok(DataStore.HistoricalData.ToList());
     }
 })
-.WithName("GetHistoricalEnergyData")
-.WithOpenApi();
+.WithName("GetHistoricalEnergyData");
 
 var summaries = new[]
 {
