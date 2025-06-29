@@ -2,6 +2,35 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "MQTTnet/4.3.5.1141": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/MQTTnet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/MQTTnet.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MQTTnet.Extensions.ManagedClient/4.3.5.1141": {
+        "type": "package",
+        "dependencies": {
+          "MQTTnet": "4.3.5.1141"
+        },
+        "compile": {
+          "lib/net7.0/MQTTnet.Extensions.ManagedClient.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/MQTTnet.Extensions.ManagedClient.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Net.Http.Json/9.0.6": {
         "type": "package",
         "compile": {
@@ -21,6 +50,76 @@
     }
   },
   "libraries": {
+    "MQTTnet/4.3.5.1141": {
+      "sha512": "1wrlAOiA8y+Cx8tSb7rj+ZfSg+0iO/Y37ijT9ST4ot8oJFklLlcYQhaqe7hUbG5Q0t2Vlj7wvUv/RcPcN3yI9w==",
+      "type": "package",
+      "path": "mqttnet/4.3.5.1141",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/MQTTnet.dll",
+        "lib/net452/MQTTnet.xml",
+        "lib/net461/MQTTnet.dll",
+        "lib/net461/MQTTnet.xml",
+        "lib/net48/MQTTnet.dll",
+        "lib/net48/MQTTnet.xml",
+        "lib/net5.0/MQTTnet.dll",
+        "lib/net5.0/MQTTnet.xml",
+        "lib/net6.0/MQTTnet.dll",
+        "lib/net6.0/MQTTnet.xml",
+        "lib/net7.0/MQTTnet.dll",
+        "lib/net7.0/MQTTnet.xml",
+        "lib/netcoreapp3.1/MQTTnet.dll",
+        "lib/netcoreapp3.1/MQTTnet.xml",
+        "lib/netstandard1.3/MQTTnet.dll",
+        "lib/netstandard1.3/MQTTnet.xml",
+        "lib/netstandard2.0/MQTTnet.dll",
+        "lib/netstandard2.0/MQTTnet.xml",
+        "lib/netstandard2.1/MQTTnet.dll",
+        "lib/netstandard2.1/MQTTnet.xml",
+        "lib/uap10.0.10240/MQTTnet.dll",
+        "lib/uap10.0.10240/MQTTnet.pri",
+        "lib/uap10.0.10240/MQTTnet.xml",
+        "mqttnet.4.3.5.1141.nupkg.sha512",
+        "mqttnet.nuspec",
+        "nuget.png"
+      ]
+    },
+    "MQTTnet.Extensions.ManagedClient/4.3.5.1141": {
+      "sha512": "/XkZ3HpBmANvHMMvp94EcuMTJVZB5DYPfldvA77/Ua++7tO1UOo6GOFuNIAK5zOslbQJW4Vds5Kv45BKSmuQXQ==",
+      "type": "package",
+      "path": "mqttnet.extensions.managedclient/4.3.5.1141",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/MQTTnet.Extensions.ManagedClient.dll",
+        "lib/net452/MQTTnet.Extensions.ManagedClient.xml",
+        "lib/net461/MQTTnet.Extensions.ManagedClient.dll",
+        "lib/net461/MQTTnet.Extensions.ManagedClient.xml",
+        "lib/net48/MQTTnet.Extensions.ManagedClient.dll",
+        "lib/net48/MQTTnet.Extensions.ManagedClient.xml",
+        "lib/net5.0/MQTTnet.Extensions.ManagedClient.dll",
+        "lib/net5.0/MQTTnet.Extensions.ManagedClient.xml",
+        "lib/net6.0/MQTTnet.Extensions.ManagedClient.dll",
+        "lib/net6.0/MQTTnet.Extensions.ManagedClient.xml",
+        "lib/net7.0/MQTTnet.Extensions.ManagedClient.dll",
+        "lib/net7.0/MQTTnet.Extensions.ManagedClient.xml",
+        "lib/netcoreapp3.1/MQTTnet.Extensions.ManagedClient.dll",
+        "lib/netcoreapp3.1/MQTTnet.Extensions.ManagedClient.xml",
+        "lib/netstandard1.3/MQTTnet.Extensions.ManagedClient.dll",
+        "lib/netstandard1.3/MQTTnet.Extensions.ManagedClient.xml",
+        "lib/netstandard2.0/MQTTnet.Extensions.ManagedClient.dll",
+        "lib/netstandard2.0/MQTTnet.Extensions.ManagedClient.xml",
+        "lib/netstandard2.1/MQTTnet.Extensions.ManagedClient.dll",
+        "lib/netstandard2.1/MQTTnet.Extensions.ManagedClient.xml",
+        "lib/uap10.0.10240/MQTTnet.Extensions.ManagedClient.dll",
+        "lib/uap10.0.10240/MQTTnet.Extensions.ManagedClient.pri",
+        "lib/uap10.0.10240/MQTTnet.Extensions.ManagedClient.xml",
+        "mqttnet.extensions.managedclient.4.3.5.1141.nupkg.sha512",
+        "mqttnet.extensions.managedclient.nuspec",
+        "nuget.png"
+      ]
+    },
     "System.Net.Http.Json/9.0.6": {
       "sha512": "EMF3fTiynj90muUC0LuDuHLJEjTzXBeUOtRofGt5jVC7aSlrbHc4QlVMAs/2LXpZtaDK6ccGQXyu9YWe9LXPfw==",
       "type": "package",
@@ -52,6 +151,8 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "MQTTnet >= 4.3.5.734",
+      "MQTTnet.Extensions.ManagedClient >= 4.3.5.734",
       "System.Net.Http.Json >= 9.0.6"
     ]
   },
@@ -98,6 +199,14 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
+          "MQTTnet": {
+            "target": "Package",
+            "version": "[4.3.5.734, )"
+          },
+          "MQTTnet.Extensions.ManagedClient": {
+            "target": "Package",
+            "version": "[4.3.5.734, )"
+          },
           "System.Net.Http.Json": {
             "target": "Package",
             "version": "[9.0.6, )"
@@ -122,5 +231,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "IoTSimulator depends on MQTTnet (>= 4.3.5.734) but MQTTnet 4.3.5.734 was not found. MQTTnet 4.3.5.1141 was resolved instead.",
+      "libraryId": "MQTTnet",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "IoTSimulator depends on MQTTnet.Extensions.ManagedClient (>= 4.3.5.734) but MQTTnet.Extensions.ManagedClient 4.3.5.734 was not found. MQTTnet.Extensions.ManagedClient 4.3.5.1141 was resolved instead.",
+      "libraryId": "MQTTnet.Extensions.ManagedClient",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

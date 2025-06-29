@@ -8,10 +8,31 @@
     ".NETCoreApp,Version=v9.0": {
       "IoTSimulator/1.0.0": {
         "dependencies": {
+          "MQTTnet": "4.3.5.1141",
+          "MQTTnet.Extensions.ManagedClient": "4.3.5.1141",
           "System.Net.Http.Json": "9.0.6"
         },
         "runtime": {
           "IoTSimulator.dll": {}
+        }
+      },
+      "MQTTnet/4.3.5.1141": {
+        "runtime": {
+          "lib/net7.0/MQTTnet.dll": {
+            "assemblyVersion": "4.3.5.1141",
+            "fileVersion": "4.3.5.1141"
+          }
+        }
+      },
+      "MQTTnet.Extensions.ManagedClient/4.3.5.1141": {
+        "dependencies": {
+          "MQTTnet": "4.3.5.1141"
+        },
+        "runtime": {
+          "lib/net7.0/MQTTnet.Extensions.ManagedClient.dll": {
+            "assemblyVersion": "4.3.5.1141",
+            "fileVersion": "4.3.5.1141"
+          }
         }
       },
       "System.Net.Http.Json/9.0.6": {}
@@ -22,6 +43,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "MQTTnet/4.3.5.1141": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1wrlAOiA8y+Cx8tSb7rj+ZfSg+0iO/Y37ijT9ST4ot8oJFklLlcYQhaqe7hUbG5Q0t2Vlj7wvUv/RcPcN3yI9w==",
+      "path": "mqttnet/4.3.5.1141",
+      "hashPath": "mqttnet.4.3.5.1141.nupkg.sha512"
+    },
+    "MQTTnet.Extensions.ManagedClient/4.3.5.1141": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/XkZ3HpBmANvHMMvp94EcuMTJVZB5DYPfldvA77/Ua++7tO1UOo6GOFuNIAK5zOslbQJW4Vds5Kv45BKSmuQXQ==",
+      "path": "mqttnet.extensions.managedclient/4.3.5.1141",
+      "hashPath": "mqttnet.extensions.managedclient.4.3.5.1141.nupkg.sha512"
     },
     "System.Net.Http.Json/9.0.6": {
       "type": "package",

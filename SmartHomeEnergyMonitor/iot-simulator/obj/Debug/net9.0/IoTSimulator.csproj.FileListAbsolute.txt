@@ -13,3 +13,7 @@ C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\ne
 C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.genruntimeconfig.cache
 C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\ref\IoTSimulator.dll
 C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.sourcelink.json
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.csproj.AssemblyReference.cache
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\bin\Debug\net9.0\MQTTnet.dll
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\bin\Debug\net9.0\MQTTnet.Extensions.ManagedClient.dll
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimul.A4CABAA7.Up2Date
