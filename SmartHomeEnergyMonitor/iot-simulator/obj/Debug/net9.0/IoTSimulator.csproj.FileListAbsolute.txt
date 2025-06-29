@@ -12,3 +12,4 @@ C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\ne
 C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.pdb
 C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.genruntimeconfig.cache
 C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\ref\IoTSimulator.dll
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.sourcelink.json

@@ -15,7 +15,7 @@ class Program
 {
     private static readonly HttpClient _httpClient = new HttpClient();
     private static readonly Random _random = new Random();
-    private static readonly string _backendApiUrl = "http://localhost:5252";
+    private static readonly string _backendApiUrl = "https://smarthomeenergy.onrender.com";
 
     static async Task Main(string[] args)
     {
