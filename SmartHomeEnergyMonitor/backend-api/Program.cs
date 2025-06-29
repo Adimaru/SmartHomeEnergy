@@ -3,6 +3,7 @@ using SmartHomeApi.Hubs;
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Cors.Infrastructure; // Needed for CorsPolicyBuilder if not implicitly included
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,31 +16,22 @@ builder.Services.AddCors(options =>
     options.AddPolicy("CorsPolicy",
         builder => builder
         .WithOrigins(
-            "http://localhost:3000",        
-            "http://127.0.0.1:3000",        
-            "https://https://smarthomeenergy.netlify.app", 
-            "https://smarthomeenergy.onrender.com" 
+            "http://localhost:3000",        // Local React Development
+            "http://127.0.0.1:3000",        // Another common local dev host
+            "https://smarthomeenergy.netlify.app", // <--- CRITICAL: Your EXACT Netlify Frontend URL
+            "https://smarthomeenergy.onrender.com"  // Your Render Backend URL (sometimes needed for same-origin calls or if other services access it)
         )
-        .AllowAnyMethod()
-        .AllowAnyHeader()
-        .AllowCredentials());
+        .AllowAnyMethod()               // Allow GET, POST, etc.
+        .AllowAnyHeader()               // Allow all headers
+        .AllowCredentials());           // ESSENTIAL for SignalR (cookies, auth headers)
 });
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("CorsPolicy",
-        builder => builder
-        .WithOrigins(
-            "http://localhost:3000",
-            "http://127.0.0.1:3000",
-            "https://*.netlify.app" // Crucial for Netlify deployment
-        )
-        .AllowAnyMethod()
-        .AllowAnyHeader()
-        .AllowCredentials());
-});
 
 var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+// Use CORS middleware BEFORE any endpoints that need it, especially SignalR Hubs.
+app.UseCors("CorsPolicy");
 
 if (app.Environment.IsDevelopment())
 {
@@ -47,9 +39,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseHttpsRedirection(); // This typically goes here
 
-app.UseCors("CorsPolicy");
+// Map a simple root endpoint to confirm API is running
+app.MapGet("/", () => "Smart Home Energy API is running!")
+   .WithName("RootApiStatus");
 
 app.MapHub<EnergyHub>("/energyHub");
 
@@ -116,7 +110,7 @@ public static class DataStore
     public const int MaxHistoricalRecords = 1000;
     public const double AlertThresholdWatts = 170.0;
 }
- 
+
 public class EnergyData
 {
     public string DeviceId { get; set; } = string.Empty;
