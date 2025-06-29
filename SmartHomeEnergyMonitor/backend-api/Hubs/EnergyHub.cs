@@ -11,7 +11,7 @@ namespace SmartHomeApi.Hubs
             await base.OnConnectedAsync();
         }
 
-        public override async Task OnDisconnectedAsync(Exception exception)
+        public override async Task OnDisconnectedAsync(Exception? exception)
         {
             Console.WriteLine($"Client disconnected: {Context.ConnectionId}");
             await base.OnDisconnectedAsync(exception);
