@@ -1,12 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "5dd0WOdo/Go=",
+  "dgSpecHash": "FjxYcRSKX/8=",
   "success": true,
   "projectFilePath": "C:\\Users\\yenia\\SmartHomeEnergy\\SmartHomeEnergyMonitor\\iot-simulator\\IoTSimulator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yenia\\.nuget\\packages\\mqttnet\\4.3.5.1141\\mqttnet.4.3.5.1141.nupkg.sha512",
     "C:\\Users\\yenia\\.nuget\\packages\\mqttnet.extensions.managedclient\\4.3.5.1141\\mqttnet.extensions.managedclient.4.3.5.1141.nupkg.sha512",
-    "C:\\Users\\yenia\\.nuget\\packages\\system.net.http.json\\9.0.6\\system.net.http.json.9.0.6.nupkg.sha512"
+    "C:\\Users\\yenia\\.nuget\\packages\\system.io.pipelines\\9.0.6\\system.io.pipelines.9.0.6.nupkg.sha512",
+    "C:\\Users\\yenia\\.nuget\\packages\\system.net.http.json\\9.0.6\\system.net.http.json.9.0.6.nupkg.sha512",
+    "C:\\Users\\yenia\\.nuget\\packages\\system.text.encodings.web\\9.0.6\\system.text.encodings.web.9.0.6.nupkg.sha512",
+    "C:\\Users\\yenia\\.nuget\\packages\\system.text.json\\9.0.6\\system.text.json.9.0.6.nupkg.sha512",
+    "C:\\Users\\yenia\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.17\\microsoft.netcore.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\yenia\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.17\\microsoft.windowsdesktop.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\yenia\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.17\\microsoft.aspnetcore.app.ref.8.0.17.nupkg.sha512",
+    "C:\\Users\\yenia\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.17\\microsoft.netcore.app.host.win-x64.8.0.17.nupkg.sha512"
   ],
   "logs": [
     {
@@ -18,7 +25,7 @@
       "filePath": "C:\\Users\\yenia\\SmartHomeEnergy\\SmartHomeEnergyMonitor\\iot-simulator\\IoTSimulator.csproj",
       "libraryId": "MQTTnet",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     },
     {
@@ -30,7 +37,7 @@
       "filePath": "C:\\Users\\yenia\\SmartHomeEnergy\\SmartHomeEnergyMonitor\\iot-simulator\\IoTSimulator.csproj",
       "libraryId": "MQTTnet.Extensions.ManagedClient",
       "targetGraphs": [
-        "net9.0"
+        "net8.0"
       ]
     }
   ]
