@@ -1,0 +1,14 @@
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\bin\Debug\net9.0\IoTSimulator.exe
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\bin\Debug\net9.0\IoTSimulator.deps.json
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\bin\Debug\net9.0\IoTSimulator.runtimeconfig.json
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\bin\Debug\net9.0\IoTSimulator.dll
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\bin\Debug\net9.0\IoTSimulator.pdb
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.AssemblyInfoInputs.cache
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.AssemblyInfo.cs
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.csproj.CoreCompileInputs.cache
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.dll
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\refint\IoTSimulator.dll
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.pdb
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\IoTSimulator.genruntimeconfig.cache
+C:\Users\yenia\SmartHomeEnergy\SmartHomeEnergyMonitor\iot-simulator\obj\Debug\net9.0\ref\IoTSimulator.dll
