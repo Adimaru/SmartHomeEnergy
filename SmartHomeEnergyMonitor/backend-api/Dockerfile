@@ -24,7 +24,7 @@ WORKDIR /app
 COPY --from=build /app/publish .
 
 # Expose the port your ASP.NET Core app listens on (default for Kestrel in containers)
-EXPOSE 8080 # Kestrel default HTTP port
+EXPOSE 8080 
 
 # Define the entry point for the application
 ENTRYPOINT ["dotnet", "SmartHomeApi.dll"]
