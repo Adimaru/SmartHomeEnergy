@@ -1,0 +1,21 @@
+# Use the official .NET SDK image to build the application
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
+WORKDIR /app
+
+# Copy the .csproj file and restore dependencies
+COPY *.csproj ./
+RUN dotnet restore
+
+# Copy the rest of the application files
+COPY . ./
+
+# Publish the application
+RUN dotnet publish -c Release -o out
+
+# Use the official .NET Runtime image to run the application
+FROM mcr.microsoft.com/dotnet/runtime:8.0
+WORKDIR /app
+COPY --from=build-env /app/out .
+
+# Command to run the application
+ENTRYPOINT ["dotnet", "iot-simulator.dll"]

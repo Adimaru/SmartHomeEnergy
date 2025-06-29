@@ -57,3 +57,7 @@ TestResults/
 
 # Render specific
 .render/
+
+# C# / .NET
+[Bb]in/
+[Oo]bj/
