@@ -20,6 +20,20 @@ builder.Services.AddCors(options =>
         .AllowCredentials());
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy",
+        builder => builder
+        .WithOrigins(
+            "http://localhost:3000",
+            "http://127.0.0.1:3000",
+            "https://*.netlify.app" // Crucial for Netlify deployment
+        )
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowCredentials());
+});
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
